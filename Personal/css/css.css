@@ -7,6 +7,38 @@ body{
 	margin: 0;	
 	background: lightslategrey;
 }
+
+.a{
+	max-width: 1200px;
+	min-width:768px;
+	margin: auto;
+}
+
+.b{
+	width: 20%;
+	border:1px solid #f00;
+	margin:0px 0px;
+	min-height: 500px;
+	float: left;
+}
+
+.b:nth-child(2)
+{
+	float:right;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+a:visited{
+	color: #f00;
+}
+a:hover{
+	color: #000000;
+	border-bottom: 2px solid #000;
+}
 /*.clearfix::after{
 	content: "";
 	display: table;
